@@ -31,6 +31,7 @@
       <nav class="main-nav" id="main-nav" aria-label="Navigazione principale">
         <a href="#servizi">Servizi</a>
         <a href="#metodo">Metodo</a>
+        <a href="#preventivo">Preventivo</a>
         <a class="nav-cta" href="tel:+393467255004">Contattami</a>
       </nav>
     </header>
@@ -126,6 +127,75 @@
           <article class="reveal"><span>02</span><h3>Scelte trasparenti</h3><p>Condividiamo soluzioni e priorità con un linguaggio comprensibile.</p></article>
           <article class="reveal"><span>03</span><h3>Presenza costante</h3><p>Andrea resta il tuo contatto durante tutte le fasi del lavoro.</p></article>
         </div>
+      </section>
+
+      <section class="quote" id="preventivo" aria-labelledby="quote-title">
+        <div class="quote-intro reveal">
+          <p class="eyebrow">Richiedi un preventivo</p>
+          <h2 id="quote-title">Raccontaci<br />il tuo <em>progetto.</em></h2>
+          <p>Descrivi ciò di cui hai bisogno: ti ricontatteremo per approfondire le esigenze e preparare una proposta su misura.</p>
+          <div class="quote-note">
+            <span aria-hidden="true">01</span>
+            <p><strong>Compila la richiesta</strong><small>Bastano pochi dettagli per iniziare.</small></p>
+          </div>
+          <div class="quote-note">
+            <span aria-hidden="true">02</span>
+            <p><strong>Parliamone insieme</strong><small>Verifichiamo fattibilità, tempi e priorità.</small></p>
+          </div>
+        </div>
+
+        <form class="quote-form reveal" id="quote-form" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="first-name">Nome <span aria-hidden="true">*</span></label>
+              <input id="first-name" name="firstName" type="text" autocomplete="given-name" required />
+              <small class="field-error" aria-live="polite"></small>
+            </div>
+            <div class="form-field">
+              <label for="last-name">Cognome <span aria-hidden="true">*</span></label>
+              <input id="last-name" name="lastName" type="text" autocomplete="family-name" required />
+              <small class="field-error" aria-live="polite"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required />
+              <small class="field-error" aria-live="polite"></small>
+            </div>
+            <div class="form-field">
+              <label for="phone">Telefono <small>opzionale</small></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" />
+              <small class="field-error" aria-live="polite"></small>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Come possiamo aiutarti? <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="6" required placeholder="Ad esempio: tipologia di intervento, luogo e tempistiche desiderate"></textarea>
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="terms-block">
+            <label class="checkbox-field" for="terms">
+              <input id="terms" name="terms" type="checkbox" required />
+              <span class="custom-checkbox" aria-hidden="true"></span>
+              <span>Ho letto e accetto i termini e le condizioni per il trattamento della richiesta. <span aria-hidden="true">*</span></span>
+            </label>
+            <button class="terms-trigger" type="button" aria-expanded="false" aria-controls="terms-details">Leggi i termini e le condizioni</button>
+            <div class="terms-details" id="terms-details" hidden>
+              I dati inseriti saranno utilizzati esclusivamente per rispondere alla richiesta di preventivo e per gli eventuali contatti necessari alla sua gestione. Non saranno ceduti a terzi per finalità commerciali.
+            </div>
+            <small class="field-error terms-error" aria-live="polite"></small>
+          </div>
+
+          <button class="quote-submit" type="submit">
+            <span>Invia la richiesta</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
       </section>
 
       <section class="contact" aria-labelledby="contact-title">
