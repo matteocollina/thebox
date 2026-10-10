@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://theboxsmartsolutions.it/sitemap.xml
